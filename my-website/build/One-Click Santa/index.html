@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <title>One Click Hero RPG</title>
+    <script type='text/javascript' src='phaser.js'></script>
+    <script type='text/javascript' src='Main.js'></script>
+    <script type='text/javascript' src='States/TitleState.js'></script>
+    <script type='text/javascript' src='States/leveloneState.js'></script>
+    <script type='text/javascript' src='States/leveltwoState.js'></script>
+
+    <style>
+        canvas {
+            margin-top: -8px;
+        }
+    </style>
+</head>
+
+<body>
+    <script type='text/javascript'>
+ 
+
+
+        var config = {
+            type: Phaser.AUTO,
+            width: 800,
+            height: 800,
+        };
+
+        var game = new Phaser.Game(config);
+        var Gamedata = {
+            highscore: 0,
+            bestHighScore: 0,
+        };
+
+        game.state.add('main', mainState);
+        game.state.add('title', TitleState);
+        game.state.add('levelone', leveloneState);
+        game.state.add('leveltwo', leveltwoState);
+
+        game.state.start('main');
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+{
+  "files": {
+    "app.js": "/WordAround/static/js/app.34313f10.chunk.js",
+    "app.js.map": "/WordAround/static/js/app.34313f10.chunk.js.map",
+    "runtime~app.js": "/WordAround/static/js/runtime~app.cccfa19c.js",
+    "runtime~app.js.map": "/WordAround/static/js/runtime~app.cccfa19c.js.map",
+    "static/js/2.de1eb4af.chunk.js": "/WordAround/static/js/2.de1eb4af.chunk.js",
+    "static/js/2.de1eb4af.chunk.js.map": "/WordAround/static/js/2.de1eb4af.chunk.js.map",
+    "favicon-16.png": "/WordAround/favicon-16.png",
+    "favicon-32.png": "/WordAround/favicon-32.png",
+    "favicon.ico": "/WordAround/favicon.ico",
+    "index.html": "/WordAround/index.html",
+    "manifest.json": "/WordAround/manifest.json",
+    "serve.json": "/WordAround/serve.json",
+    "static/js/2.de1eb4af.chunk.js.LICENSE.txt": "/WordAround/static/js/2.de1eb4af.chunk.js.LICENSE.txt",
+    "static/media/Backspace.mp3": "/WordAround/static/media/Backspace.6a8c3550.mp3",
+    "static/media/Chime_Five.mp3": "/WordAround/static/media/Chime_Five.03fd24b7.mp3",
+    "static/media/Chime_Four.mp3": "/WordAround/static/media/Chime_Four.9c685ff0.mp3",
+    "static/media/Chime_One.mp3": "/WordAround/static/media/Chime_One.b840ab44.mp3",
+    "static/media/Chime_Three.mp3": "/WordAround/static/media/Chime_Three.a6f10bec.mp3",
+    "static/media/Chime_Two.mp3": "/WordAround/static/media/Chime_Two.e785a3b3.mp3",
+    "static/media/Click.mp3": "/WordAround/static/media/Click.53d166f0.mp3",
+    "static/media/Fail.mp3": "/WordAround/static/media/Fail.7d30e942.mp3",
+    "static/media/Mug_Animation.gif": "/WordAround/static/media/Mug_Animation.38963dde.gif",
+    "static/media/Mug_Animation_Lose.gif": "/WordAround/static/media/Mug_Animation_Lose.da7c4e56.gif",
+    "static/media/Song.wav": "/WordAround/static/media/Song.39c3558c.wav",
+    "static/media/Submit.mp3": "/WordAround/static/media/Submit.df4b85e5.mp3",
+    "static/media/Victory.mp3": "/WordAround/static/media/Victory.2dc5662a.mp3",
+    "static/media/homeButton.png": "/WordAround/static/media/homeButton.d29f6ebc.png",
+    "static/media/logoDone.png": "/WordAround/static/media/logoDone.2aa156f4.png",
+    "static/media/r.png": "/WordAround/static/media/r.99f7bd2e.png",
+    "static/media/statsImage.png": "/WordAround/static/media/statsImage.e6528645.png"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.cccfa19c.js",
+    "static/js/2.de1eb4af.chunk.js",
+    "static/js/app.34313f10.chunk.js"
+  ]
+}
