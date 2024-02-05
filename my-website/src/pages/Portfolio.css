@@ -1,0 +1,90 @@
+.page-container {
+    background-color: #0c0c0c;
+    height: 100%;
+    width: 100%;
+    min-height: calc(100vh - 75px);
+    color: white;
+}
+
+
+.portfolio-container {
+    height: 80%;
+    background-color: #0c0c0c;
+    padding-top: 180px;
+    margin-bottom: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.gallery-container {
+ border-top-color: grey;
+ border-top-width: 1px;
+ border-top-style: solid;
+padding-top: 25px;
+ 
+}
+
+.item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+.item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 400px;
+    align-items: center;
+}
+
+
+
+.item img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    transition: transform 0.15s ease-in-out;
+}
+
+
+.item img:hover{
+    overflow: hidden;
+    transform: scale(1.025); /* Adjust the scale factor as needed for the zoom effect */
+    transform-origin: center center;
+    cursor: pointer;
+}
+
+h2 {
+    margin: 0px;
+    color: white;
+    font-size: 18px;
+}
+
+h3 {
+    margin: 0px;
+    color: white;
+    font-size: 18px;
+}
+
+p {
+    margin: 0px;
+    color: white;
+    font-size: 14px;
+}
+
+.item-container a {
+    text-decoration: none;
+    color: white; /* Set the desired text color for links */
+  }
+  
+  /* If you want to remove underlines only on hover */
+  .item-container a:hover {
+    text-decoration: none;
+  }
+
+@media (max-width: 767px) {}

@@ -1,0 +1,61 @@
+.agp {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    min-height: 750px;
+    height: 100%;
+    width: 100%;
+   
+}
+
+.stats-container {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    display: flex;
+    flex: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.agp h2 {
+    color: white
+}
+
+iframe {
+    display: flex;
+    position: fixed;
+    border: none;
+    top: 0px;
+    left:0px;
+    width: 100%;
+
+}
+
+.react-native {
+    height: 1000px;
+    transform:scale(0.77);
+}
+
+.phaser {
+    height: 100%;
+}
+
+
+
+

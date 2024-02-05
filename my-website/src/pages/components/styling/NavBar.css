@@ -1,0 +1,219 @@
+/* Navbar.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 100vh;
+
+}
+
+.navbar {
+  position: fixed;
+  flex: 1;
+  top: 0;
+  background-color: #0c0c0c; /* Nav bar color #0c0c0c */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  height: 10vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.flex-logo {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.flex-links {
+  display: flex;
+  flex: 12;
+  align-items: center;
+  justify-content: flex-end;
+
+
+}
+
+.flex-menu {
+  display: flex;
+  flex: 3;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+
+h1{
+  font-size: 18px;
+  font-weight: normal;
+  color: grey;
+  transition: color 0.3s ease;
+}
+
+
+
+
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  font-weight: 900;
+
+}
+
+.nav-links a {
+  color: #F0DAB1;
+  text-decoration: none;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.nav-links a:hover {
+  background-color: #555;
+
+}
+
+.nav-links a:hover h1 {
+
+  color: white;
+
+}
+
+
+/* Media Query for displaying the hamburger menu on mobile */
+@media screen and (max-width: 768px) {
+
+  .flex-menu {
+    cursor: pointer;
+  }
+
+  .menu-lines {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    transition: background-color 0.3s ease;
+    /* Add transition for hover effect */
+  }
+
+  .flex-menu:hover {
+    background-color: #F0DAB1;
+    /* Change the background color on hover */
+  }
+
+
+  .menu-icon-one,
+  .menu-icon-two,
+  .menu-icon-three,
+  .menu-icon-four {
+    position: absolute;
+    margin-top: -2.5px;
+    width: 100%;
+    height: 5px;
+    background-color: #F0DAB1;
+    border-radius: 15px;
+    transition: transform 0.2s ease, opacity 0.1s ease;
+  }
+
+  .flex-menu:hover .menu-icon-one,
+  .flex-menu:hover .menu-icon-two,
+  .flex-menu:hover .menu-icon-three,
+  .flex-menu:hover .menu-icon-four {
+    background-color: black;
+  }
+
+
+  .menu-icon-one {
+    top: 25%;
+  }
+
+  .menu-icon-two {
+    top: 50%;
+  }
+
+  .menu-icon-three {
+    top: 50%;
+  }
+
+  .menu-icon-four {
+    top: 75%;
+  }
+
+  .flex-menu.active .menu-icon-one {
+    opacity: 0;
+  }
+
+  .flex-menu.active .menu-icon-two {
+    transform: rotate(45deg);
+  }
+
+  .flex-menu.active .menu-icon-three {
+    transform: rotate(-45deg);
+  }
+
+  .flex-menu.active .menu-icon-four {
+    opacity: 0;
+  }
+
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: #0c0c0c;
+  }
+
+  .nav-links .red:hover {
+    background-color: #DC8686;
+
+  }
+
+  .nav-links .blue:hover {
+    background-color: #7ED7C1;
+
+  }
+
+  .nav-links .green:hover {
+    background-color: green;
+
+  }
+
+  .nav-links .purple:hover {
+    background-color: purple;
+
+  }
+
+
+  .empty-space {
+    height: 448px;
+    background-color:transparent;
+    z-index: 0;
+  }
+
+
+
+  .nav-links.active {
+    display: flex;
+  
+ 
+  }
+
+
+}
+

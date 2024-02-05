@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    position: static;
+    height: 75px;
+    width: 100%;
+    background-color: #161616;
+    flex-direction: row;
+    bottom: 0px;
+}
+
+.footer-links {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+    border-top-color: grey;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+.social-media {
+    height: 30px;
+    width: 30px;
+    transition: fill 0.3s;
+    padding-right: 10px;
+}
+
+#linkedin:hover path {
+    fill: #0077b5;
+}
+
+#github:hover path {
+    fill: #fafbfc;
+}
+
+#youtube:hover path {
+    fill: #FF0000;
+}
