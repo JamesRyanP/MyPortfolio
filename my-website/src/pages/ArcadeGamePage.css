@@ -4,6 +4,7 @@
     min-height: 750px;
     padding-top: 100px;
     width: 100%; /* Ensure the container spans the full width */
+  
     
 }
 
@@ -101,6 +102,10 @@ iframe {
     .game-container {
         width: 100%;
         height: auto;
+    }
+
+    iframe {
+        min-width: 90vh;
     }
 
 }

@@ -82,8 +82,7 @@ p {
 
 
     .arcade-item-container {
-        padding-left: 25px;
-        padding-right: 25px;
+     
         flex-direction: column;
         justify-content: center;
     }
