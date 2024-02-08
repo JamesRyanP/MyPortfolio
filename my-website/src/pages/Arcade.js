@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Arcade.css";
 import { gameData } from "./components/Arcade-Items";
-
+import "./Arcade.css";
 
 
 const Portfolio = () => {
@@ -22,9 +21,9 @@ const Portfolio = () => {
 
   const ArcadeList = ({ data }) => {
     return (
-      <div className="item-container">
+      <div className="arcade-item-container">
         {data.map(item => (
-          <Link to={`/arcade/game/detail/${item.id}`} key={item.id} className="item">
+          <Link to={`/arcade/game/detail/${item.id}`} key={item.id} className="arcade-item">
             <img src={generateImageUrl(item)} alt={item.title} />
             <h3>{item.title}</h3>
             <p>{item.mainCategory}</p>
@@ -36,10 +35,10 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="page-container">
-      <div className="portfolio-container">
+    <div className="arcade-page-container">
+      <div className="arcade-container">
         <h2>Playable Games</h2>
-        <div className="gallery-container">
+        <div className="arcade-gallery-container">
           <ArcadeList data={gameData} />
         </div>
       </div>

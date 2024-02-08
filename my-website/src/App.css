@@ -1,7 +1,21 @@
 body {
   margin: 0px;
   padding: 0px;
+  
 }
+.page-container {  
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+
 
 @font-face {
   font-family: 'Poppins';

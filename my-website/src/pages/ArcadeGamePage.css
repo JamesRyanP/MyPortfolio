@@ -1,27 +1,48 @@
 .agp {
     display: flex;
-    flex: 1;
     flex-direction: row;
     min-height: 750px;
-    height: 100%;
-    width: 100%;
-   
+    padding-top: 100px;
+    width: 100%; /* Ensure the container spans the full width */
+    
 }
 
 .stats-container {
     display: flex;
     flex: 2;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
+    padding: 5px 0px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 75%;
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20);
+    border: 2px solid grey;
     align-items: center;
+    padding: 25px 25px;
+}
+
+
+.stats .role h3 {
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+.stats .role p {
+    color: rgb(202, 202, 202);
 }
 
 .game-container {
     display: flex;
-    flex: 10;
-    flex-direction: column;
+    flex: 6;
     justify-content: center;
-    align-items: center;
+    width: 100%; /* Ensure the container spans the full width */
+    
 }
 
 .right-container {
@@ -38,24 +59,48 @@
 }
 
 iframe {
-    display: flex;
-    position: fixed;
     border: none;
-    top: 0px;
-    left:0px;
     width: 100%;
-
+    min-height: 600px;    
+    border-radius: 15px;
+    background-color: rgb(20, 20, 20);
+    border: 2px solid grey;
+    margin: 5px;
 }
 
 .react-native {
+    margin-top: -115px;
+    transform: scale(.75);
     height: 1000px;
-    transform:scale(0.77);
+    width: 100%;
+    padding: 10px;
 }
 
 .phaser {
-    height: 100%;
+    padding: 10px;
+
 }
 
 
+@media (max-width: 1200px) {
+    .agp {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .stats-container {
+        align-items: center;
+    }
+
+    .stats {
+        width: 90%;
+    }
 
 
+    .game-container {
+        width: 100%;
+        height: auto;
+    }
+
+}

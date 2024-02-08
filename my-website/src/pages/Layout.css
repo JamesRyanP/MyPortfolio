@@ -3,24 +3,13 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    flex: 1;
     flex-direction: column;
     z-index: 1;
-    margin: 0px;
-    top:0px;
-    background-color: #0c0c0c;
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    top:0;
+    background-color:#0c0c0c;
+  
 }
 
-main {
-    flex: 1;
-}
 
-@media (max-width: 767px) {
- 
-    main {
-        display: flex;
-        flex: 1;
-    }
-    
-}

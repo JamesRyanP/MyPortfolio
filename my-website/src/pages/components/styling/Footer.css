@@ -1,11 +1,13 @@
+
 .footer {
     display: flex;
-    position: static;
+    position: relative;
     height: 75px;
     width: 100%;
     background-color: #161616;
     flex-direction: row;
-    bottom: 0px;
+
+
 }
 
 .footer-links {

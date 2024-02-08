@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Iframe from 'react-iframe';
 import "./ArcadeGamePage.css";
-import { getPathById, getEngineById } from "./components/Arcade-Items";
+import { getPathById, getEngineById, getStatsById } from "./components/Arcade-Items";
 import { GetHighScoreSanta } from "./components/OneClickSanta-Functions";
 
 const ArcadeGamePage = () => {
@@ -12,10 +12,11 @@ const ArcadeGamePage = () => {
   const iframeSrc = getPathById(Number(id));
   const gameEngine = getEngineById(Number(id));
 
-  const getIframeStyle = (engine) => 
-  {
-    if (engine === 'Phaser') 
-    {
+  const stats = getStatsById(Number(id));
+console.log(stats);
+
+  const getIframeStyle = (engine) => {
+    if (engine === 'Phaser') {
       return 'phaser'
     };
 
@@ -30,26 +31,25 @@ const ArcadeGamePage = () => {
 
   return (
     <div className="agp">
-      <div className="stats-container">
-        <h2>Top Score</h2>
-        <GetHighScoreSanta />
-        <p>Item ID: {id}</p>
+      <div className="right-container">
       </div>
       <div className="game-container">
         <Iframe
           src={iframeSrc}
           id="react-native-iframe"
           className={`${iframeStyle}`}
-          display="initial"
+          display="block"
           scrolling="no"
-          allowFullScreen="true"
-          marginheight="0px"
+          allowFullScreen={true}
         />
-
       </div>
-      <div className="right-container">
+      <div className="stats-container">
+        <div className="stats">
+          <h2>Top Score</h2>
 
-
+          <h2>{stats}</h2>
+ 
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,6 @@
 
 
 .page {
-    
     position: relative;
     top: 0px;
     padding-left: 20%;
@@ -48,6 +47,7 @@
     justify-content: center;
     margin: 0px;
     padding: 0px;
+
 }
 
 p.name {
@@ -84,8 +84,8 @@ p.description {
     height: 2px;
     width: 200px;
     background-image: linear-gradient(to right, #add8e6, #d8ecf3, #e9cece, #feb086);
-    ;
     margin-bottom: 15px;
+    
 }
 
 /* Media query for small screens (e.g., mobile) */
@@ -93,6 +93,7 @@ p.description {
     .page {
         display: flex;
         padding-top: 10vh;
+        
     }
 
     .flex-container {

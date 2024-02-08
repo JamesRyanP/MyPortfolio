@@ -258,7 +258,7 @@ const AboutMe = () => {
 
 
   return (
-    <body className="page-container">
+    <body className="resume-page-container">
       <div className="resume-container">
         <div className="text-container">
 

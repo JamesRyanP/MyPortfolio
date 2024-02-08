@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Portfolio.css";
 import { gameData, generateImageUrl } from "./components/Gallery-Items";
-
+import "./Portfolio.css"
 
 
 
@@ -22,10 +21,10 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="page-container">
+    <div className="portfolio-page-container">
       <div className="portfolio-container">
         <h2>Portfolio</h2>
-        <div className="gallery-container">
+        <div className="portfolio-gallery-container">
           <GalleryList data={gameData} />
         </div>
       </div>
