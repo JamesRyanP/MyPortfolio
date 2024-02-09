@@ -260,45 +260,41 @@ const AboutMe = () => {
   return (
     <body className="resume-page-container">
       <div className="resume-container">
-        <div className="text-container">
 
-          <div className="resume-bar">
 
-            <div className="empty-tab">
-              <h2>
+        <div className="resume-bar">
 
-              </h2>
-            </div>
-            <div className={`skills-tab ${isSkillsOpen ? 'active' : ''}`} onClick={setSkillsActive}>
-              <h2>
-                Skills
-              </h2>
-            </div>
-            <div className={`exp-tab ${isExpOpen ? 'active' : ''}`} onClick={setExpActive}>
-              <h2>
-                Experience
-              </h2>
-            </div>
-            <div className={`edu-tab ${isEduOpen ? 'active' : ''}`} onClick={setEduActive}>
-              <h2>
-                Education
-              </h2>
-            </div>
-            <div className="empty-tab-two">
-              <h2>
+          <div className="empty-tab">
+            <h2>
 
-              </h2>
-            </div>
-
+            </h2>
           </div>
-          <div className="info">
-
-
-            <DisplayInfo />
-
+          <div className={`skills-tab ${isSkillsOpen ? 'active' : ''}`} onClick={setSkillsActive}>
+            <h2>
+              Skills
+            </h2>
           </div>
+          <div className={`exp-tab ${isExpOpen ? 'active' : ''}`} onClick={setExpActive}>
+            <h2>
+              Experience
+            </h2>
+          </div>
+          <div className={`edu-tab ${isEduOpen ? 'active' : ''}`} onClick={setEduActive}>
+            <h2>
+              Education
+            </h2>
+          </div>
+          <div className="empty-tab-two">
+            <h2>
 
+            </h2>
+          </div>
         </div>
+
+        <div className="text-container">
+          <DisplayInfo />
+        </div>
+        
       </div>
     </body>
   );

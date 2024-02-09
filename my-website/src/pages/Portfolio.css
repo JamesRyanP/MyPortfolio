@@ -1,21 +1,21 @@
 .portfolio-page-container {
-    width: 100%;
-    padding-top: 150px;
-    padding-left: 150px;
-    padding-right: 150px;
+    display: flex;
+    flex: 1;
+    padding-top: 75px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
 .portfolio-container {
     display: flex;
+    flex: 1;
     flex-direction: column;
-
 }
 
 .portfolio-gallery-container {
     flex: 1;
     flex-direction: row;
-
     border-top: 1px solid grey;
     padding-top: 50px;
 }
@@ -46,7 +46,6 @@
 
 
 .item img:hover {
-    overflow: hidden;
     transform: scale(1.025);
     transform-origin: center center;
     cursor: pointer;
@@ -81,9 +80,11 @@ p {
 
 @media (max-width: 767px) {
 
+    .portfolio-page-container {
+        padding-top: 25px;
+    }
 
     .item-container {
-        
         flex-direction: column;
         justify-content: center;
         align-items: center;

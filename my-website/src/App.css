@@ -3,15 +3,17 @@ body {
   padding: 0px;
   
 }
-.page-container {  
-  width: 100%;
-}
+
 
 main {
   display: flex;
-  flex: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
+  padding-left: 25px;
+  padding-right: 25px; 
+  padding-top: 100px;
+  min-height: calc(100vh - 100px - 75px);
+
+ 
+
 }
 
 

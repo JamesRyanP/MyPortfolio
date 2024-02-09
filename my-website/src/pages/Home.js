@@ -19,8 +19,8 @@ const Home = () => {
 
 
   return (
-    <div className="page">
-      <div className="flex-container">
+    <div className="home-page">
+      <div className="hp-flex-container">
         <div className="photo">
           <div className="image-container">
             <img src={James} alt="Centered Image" />

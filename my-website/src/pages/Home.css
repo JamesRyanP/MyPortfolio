@@ -1,21 +1,16 @@
-
-
-
-.page {
-    position: relative;
-    top: 0px;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 25vh;
-}
-
-.flex-container {
-    font-family: "Poppins";
+.home-page {
     display: flex;
-    flex-direction: row;
-    margin: 0;
+    flex: 1;
     justify-content: center;
     align-content: center;
+}
+
+.hp-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
 }
 
 .photo {
@@ -29,6 +24,7 @@
 
 .image-container {
     padding-right: 20px;
+  
 }
 
 .image-container img {
@@ -45,9 +41,6 @@
     color: white;
     align-items: center;
     justify-content: center;
-    margin: 0px;
-    padding: 0px;
-
 }
 
 p.name {
@@ -85,18 +78,15 @@ p.description {
     width: 200px;
     background-image: linear-gradient(to right, #add8e6, #d8ecf3, #e9cece, #feb086);
     margin-bottom: 15px;
-    
+
 }
 
 /* Media query for small screens (e.g., mobile) */
 @media (max-width: 767px) {
-    .page {
-        display: flex;
-        padding-top: 10vh;
-        
-    }
 
-    .flex-container {
+
+
+    .hp-flex-container {
         flex-direction: column;
         width: 100%;
     }

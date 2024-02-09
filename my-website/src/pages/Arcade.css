@@ -1,15 +1,16 @@
 .arcade-page-container {
-    width: 100%;
-    padding-top: 150px;
-    padding-left: 150px;
-    padding-right: 150px;
+    display: flex;
+    flex: 1;
+    padding-top: 75px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
 .arcade-container {
     display: flex;
+    flex: 1;
     flex-direction: column;
-
 }
 
 .arcade-gallery-container {
@@ -45,7 +46,7 @@
 
 
 .arcade-item img:hover {
-    overflow: hidden;
+ 
     transform: scale(1.025);
     transform-origin: center center;
     cursor: pointer;
@@ -80,10 +81,14 @@ p {
 
 @media (max-width: 767px) {
 
+    .arcade-page-container {
+        padding-top: 25px;
+    }
+    
 
     .arcade-item-container {
-     
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 }

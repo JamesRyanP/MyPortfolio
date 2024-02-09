@@ -1,23 +1,19 @@
 .gdp {
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 100px;
-    padding-bottom: 25px;
-  
 }
 
 .gdp .images-container {
-    flex: 2;
+    flex: 1;
     min-height: 700px;
-    width: 500px;
-    margin-right: 10px;
+    max-width: 600px;
     border-radius: 20px;
     background-color: white;
-
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .gdp .banner img {
@@ -62,11 +58,12 @@
     flex-direction: column;
     flex: 1;
     min-height: 700px;
-    width: 500px;
-    margin-right: 10px;
+    max-width: 600px;
     border-radius: 20px;
     background-color: rgb(20, 20, 20);
     border: 2px solid grey;
+    margin-bottom: 10px;
+    margin-left: 10px;
 
 }
 
@@ -175,28 +172,26 @@
 
 }
 
-@media (max-width: 1300px) {
-    .gdp {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
 
-    .gdp .placeholder-banner {
-        height: 300px;
-    }
-
-    .gdp .info-container {
-        margin-top: 25px;
-        
-    }
-
-}
 
 @media (max-width: 767px) {
     .gdp {
-        padding-left: 5%;
-        padding-right: 5%;
         flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 25px;
+      
+    }
+
+    .gdp .images-container {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .gdp .info-container {
+       width: 100%;
+       margin-left: 0;
+
     }
 
     .gdp .placeholder-banner {

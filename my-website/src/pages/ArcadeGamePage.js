@@ -27,20 +27,31 @@ console.log(stats);
     return '';
   }
 
+  const getGameContainerStyle = (engine) => {
+    if (engine === 'Phaser') {
+      return 'phaser-game-container'
+    };
+
+    if (engine === 'React-Native') {
+      return 'react-native-game-container'
+    };
+
+    return '';
+  }
+
   const iframeStyle = getIframeStyle(gameEngine);
+  const gameContainerStyle = getGameContainerStyle(gameEngine);
 
   return (
     <div className="agp">
-      <div className="right-container">
-      </div>
-      <div className="game-container">
+
+      <div className={`${gameContainerStyle}`}>
         <Iframe
           src={iframeSrc}
           id="react-native-iframe"
           className={`${iframeStyle}`}
-          display="block"
           scrolling="no"
-          allowFullScreen={true}
+          allow="fullscreen"
         />
       </div>
       <div className="stats-container">
