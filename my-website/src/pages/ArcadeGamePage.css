@@ -1,14 +1,20 @@
-.agp {
+.arcade-game-page {
     display: flex;
     flex: 1;
-    flex-direction: row;
+    background-color: black;
     overflow: hidden;
+}
+
+.agp {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 100px 0px;
 }
 
 .stats-container {
     display: flex;
     flex: 2;
-    padding: 5px 0px;
 }
 
 .stats {
@@ -17,103 +23,101 @@
     flex: 1;
     width: 100%;
     border-radius: 20px;
-    background-color: rgb(20, 20, 20);
-    border: 2px solid grey;
-    align-items: center;
+    align-items: flex-start;
     padding: 25px 10px;
+    align-items: center;
 }
 
 
-.stats .role h3 {
-    font-size: 14px;
-    font-weight: 400px;
-}
 
-.stats .role p {
-    color: rgb(202, 202, 202);
-}
 .phaser-game-container {
     display: flex;
-    flex: 6;
+
+
 }
+
 .react-native-game-container {
     display: flex;
-    flex: 6;
-    width: 100%; 
+    width: 100%;
     height: calc(100vh * 0.80);
-    overflow: visible; 
-    justify-content: center; 
-    align-items: center; 
-    
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
 }
 
-
+.empty-container {
+    flex: 2;
+}
 
 
 
 .agp h2 {
-    color: white
+    color: white;
 }
 
 iframe {
     border: none;
     width: 100%;
-    border-radius: 15px;
-    background-color: rgb(20, 20, 20);
-    border: 2px solid grey;
-    margin: 5px;
-
-
+    min-height: 90vh;
+    padding: 20px 0px;
 }
 
 .react-native {
     transform: scale(75%);
     height: 1000px;
     width: 100%;
-  
 }
 
-.phaser {
-
-}
 
 
 @media (max-width: 767px) {
     .agp {
         flex-direction: column;
+        padding: 0px 0px;
+        padding-top: 100px;
+
     }
 
     .stats-container {
-  
+        width: 95vw;
+        margin-bottom: 100px;
     }
 
     .stats {
         width: 90%;
+        align-items: center;
+        margin: 15px 0px;
     }
 
     .phaser-game-container {
-        display: block;
-        flex: 1;
-    
+        width: 100vw;
+        margin: 0;
+        padding: 0;
     }
 
     .react-native-game-container {
-        display: flex;
-        flex: 3;
-        align-items: flex-start; 
-        width: 550px;
+        align-items: flex-start;
+        min-width: 650px;
+        overflow: hidden;
     }
 
     .react-native {
         transform: scale(.65);
         transform-origin: 0 0;
+        overflow: hidden;
     }
 
     iframe {
         min-height: 350px;
-        width: 99%;
-        margin: 0; 
-     
+        width: 100vw;
+        overflow: visible;
+        height: initial;
+    }
+
+    .empty-container {
+        flex: 0;
     }
 
 }

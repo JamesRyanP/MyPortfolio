@@ -17,7 +17,7 @@ const Portfolio = () => {
       return null;
     }
   };
-  
+
 
   const ArcadeList = ({ data }) => {
     return (
@@ -25,9 +25,10 @@ const Portfolio = () => {
         {data.map(item => (
           <Link to={`/arcade/game/detail/${item.id}`} key={item.id} className="arcade-item">
             <img src={generateImageUrl(item)} alt={item.title} />
-            <h3>{item.title}</h3>
-            <p>{item.mainCategory}</p>
-            <p>{item.secondaryCategory}</p>
+            <div className="arcade-see-info">
+              <h3>{item.title}</h3>
+            </div>
+
           </Link>
         ))}
       </div>
@@ -35,11 +36,13 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="arcade-page-container">
-      <div className="arcade-container">
-        <h2>Playable Games</h2>
-        <div className="arcade-gallery-container">
-          <ArcadeList data={gameData} />
+    <div className="arcade">
+      <div className="arcade-page-container">
+        <div className="arcade-container">
+          <h2>Playable Games</h2>
+          <div className="arcade-gallery-container">
+            <ArcadeList data={gameData} />
+          </div>
         </div>
       </div>
     </div>

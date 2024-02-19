@@ -4,13 +4,9 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
-    top:0;
-    background-color:#0c0c0c;
+    top: 0;
+    /* background-image: linear-gradient(to right, #ffe54c, #ffec7f); */
     min-height: 100vh;
     min-width: 100vw;
-
-
-
+    
 }
-
-

@@ -1,9 +1,16 @@
+.game-detail {
+    display: flex;
+    flex: 1;
+    background-image: linear-gradient(to bottom right, #ffe54c, #ffe966);
+}
+
 .gdp {
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    padding-top: 100px;
 }
 
 .gdp .images-container {
@@ -14,6 +21,11 @@
     background-color: white;
     margin-bottom: 10px;
     margin-right: 10px;
+
+    
+    border: 2px solid black;
+    box-shadow: -20px 20px 30px -20px black;
+
 }
 
 .gdp .banner img {
@@ -33,9 +45,13 @@
     align-items: center;
     height: 350px;
     width: 100%;
-    background-color: grey;
+    background-color: black;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+}
+
+.gdp .placeholder-banner h3 {
+   color: white;
 }
 
 .gdp .icon {
@@ -60,11 +76,14 @@
     min-height: 700px;
     max-width: 600px;
     border-radius: 20px;
-    background-color: rgb(20, 20, 20);
-    border: 2px solid grey;
+    background-color: white;
+    /* border: 2px solid grey; */
     margin-bottom: 10px;
     margin-left: 10px;
 
+    border: 2px solid black;
+    box-shadow: -20px 20px 30px -20px black;
+    
 }
 
 
@@ -98,7 +117,7 @@
 
 .gdp .images-container .description p {
     font-size: 14px;
-    color: rgb(94, 94, 94);
+    color: rgb(77, 77, 77);
     font-weight: 400;
     margin-top: 0px;
 
@@ -106,7 +125,7 @@
 
 .gdp .images-container .description a {
     font-size: 14px;
-    color: grey;
+    color: rgb(77, 77, 77);
     font-weight: normal;
     margin-top: 20px;
 }
@@ -118,17 +137,30 @@
 }
 
 .info-container .role {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  line-height: 30px;
 
 }
 
 .info-container .role h3 {
     font-size: 14px;
     font-weight: 400px;
+    line-height: 10px;
+ 
+}
+
+.info-container .roles h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    line-height: 20px;
+
+ 
 }
 
 .info-container .role p {
-    color: rgb(202, 202, 202);
+    color: rgb(77, 77, 77);
 }
 
 
@@ -158,18 +190,24 @@
 .info-container .tech {
     text-align: center;
     border-radius: 5px;
-    background-color: grey;
+    background-color: #4cc0ff;
     padding: 5px 10px;
     margin-right: 10px;
     font-size: 14px;
 }
 
-.info-container h3 {
-    font-size: 18px;
-    color: #f5f5f5;
-    font-weight: 600;
+.info-container .technology h2 {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
     font-style: normal;
+    margin-bottom: 25px;
+    padding: 0;
+    line-height: 20px;
+}
 
+.technology div {
+    color: white;
 }
 
 
@@ -177,20 +215,22 @@
 @media (max-width: 767px) {
     .gdp {
         flex-direction: column;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-top: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 125px;
       
     }
 
     .gdp .images-container {
         width: 100%;
         margin-right: 0;
+        max-width: 500px;
     }
 
     .gdp .info-container {
        width: 100%;
        margin-left: 0;
+       max-width: 500px;
 
     }
 

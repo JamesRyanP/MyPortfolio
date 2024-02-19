@@ -12,8 +12,10 @@ const Portfolio = () => {
         {data.map(item => (
           <Link to={`/portfolio/game/detail/${item.id}`} key={item.id} className="item">
             <img src={generateImageUrl(item.id)} alt={item.title} />
+
+            <div  className="see-info">
             <h3>{item.title}</h3>
-            <p>{item.category}</p>
+            </div>
           </Link>
         ))}
       </div>
@@ -21,6 +23,7 @@ const Portfolio = () => {
   };
 
   return (
+    <div className="portfolio">
     <div className="portfolio-page-container">
       <div className="portfolio-container">
         <h2>Portfolio</h2>
@@ -28,6 +31,7 @@ const Portfolio = () => {
           <GalleryList data={gameData} />
         </div>
       </div>
+    </div>
     </div>
   );
 };

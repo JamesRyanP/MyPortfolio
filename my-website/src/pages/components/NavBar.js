@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import './styling/NavBar.css';
+import logo from '../../assets/icons/Logo.png'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,17 +17,17 @@ const Navbar = () => {
   
       <div className="flex-logo">
         <Link to="/">
-          <img src="your-logo.png" alt="Logo" className="logo" />
+          <img src={logo} alt="Logo" className="logo" />
         </Link>
       </div>
 
       <div className="flex-links">
         <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           <div className="empty-space"></div>
-          <Link className="red" to="/" onClick={toggleMenu}><h1>Home</h1></Link>
+          <Link className="blue" to="/" onClick={toggleMenu}><h1>Home</h1></Link>
           <Link className="blue" to="/about-me" onClick={toggleMenu}><h1>Resume</h1></Link>
-          <Link className="green" to="/portfolio" onClick={toggleMenu}><h1>Portfolio</h1></Link>
-          <Link className="purple" to="/arcade" onClick={toggleMenu}><h1>Arcade</h1></Link>
+          <Link className="blue" to="/portfolio" onClick={toggleMenu}><h1>Portfolio</h1></Link>
+          <Link className="blue" to="/arcade" onClick={toggleMenu}><h1>Arcade</h1></Link>
         </nav>
       </div>
 

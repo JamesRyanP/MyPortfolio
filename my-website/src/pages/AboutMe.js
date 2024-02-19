@@ -48,7 +48,7 @@ const AboutMe = () => {
               S.A. Studio
             </h4>
             <h5>
-              Junior C# Developer
+              <strong> Junior C# Developer </strong>
             </h5>
           </div>
           <div>
@@ -200,13 +200,14 @@ const AboutMe = () => {
   const Education = () => {
     return (
       <div className='education-container'>
+        <div className='education-line'></div>
         <div className='education-blocks'>
           <div className='education-block'>
             <h4>
               Humber College, Etobicoke
             </h4>
             <h5>
-              Diploma Computer Programming
+             <strong>Diploma Computer Programming</strong> 
             </h5>
             <p>
               April 2023
@@ -218,7 +219,7 @@ const AboutMe = () => {
               York University, North York
             </h4>
             <h5>
-              B.B.A Human Resources Management
+            <strong> B.B.A Human Resources Management</strong> 
             </h5>
             <p>
               September 2016
@@ -258,6 +259,7 @@ const AboutMe = () => {
 
 
   return (
+    <div className='about-me'>
     <body className="resume-page-container">
       <div className="resume-container">
 
@@ -265,38 +267,44 @@ const AboutMe = () => {
         <div className="resume-bar">
 
           <div className="empty-tab">
-            <h2>
-
-            </h2>
+          
           </div>
+
           <div className={`skills-tab ${isSkillsOpen ? 'active' : ''}`} onClick={setSkillsActive}>
             <h2>
               Skills
+
             </h2>
+
           </div>
+
           <div className={`exp-tab ${isExpOpen ? 'active' : ''}`} onClick={setExpActive}>
             <h2>
               Experience
             </h2>
+
           </div>
+
           <div className={`edu-tab ${isEduOpen ? 'active' : ''}`} onClick={setEduActive}>
             <h2>
               Education
             </h2>
-          </div>
-          <div className="empty-tab-two">
-            <h2>
 
-            </h2>
           </div>
+
+          <div className="empty-tab-two">
+        
+          </div>
+
         </div>
 
         <div className="text-container">
           <DisplayInfo />
         </div>
-        
+
       </div>
     </body>
+    </div>
   );
 };
 

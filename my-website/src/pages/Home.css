@@ -1,8 +1,15 @@
+.home {
+    display: flex;
+    flex: 1;
+    background-image: linear-gradient(to bottom right, #ffe54c, #ffe966);
+}
+
 .home-page {
     display: flex;
     flex: 1;
     justify-content: center;
     align-content: center;
+    padding-top: 100px;
 }
 
 .hp-flex-container {
@@ -16,29 +23,38 @@
 .photo {
     display: flex;
     flex: 3;
-    align-items: center;
-    justify-content: flex-end;
+    width: 350px;
     height: 100%;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-container {
-    padding-right: 20px;
-  
-}
-
-.image-container img {
+    position: absolute;
+    border-radius: 20%;
+    margin-bottom: 20px;
+    margin-left: 20px;
     width: 350px;
     height: 350px;
-    border-radius: 50%;
-    border: 20px solid #333;
+    border: 2px solid black;
+    z-index: 1;
+    
+}
+
+
+.photo img {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 20%;
+    z-index: 0;
 }
 
 .text {
     display: flex;
     flex: 4;
     padding-left: 20px;
-    color: white;
+    color: black;
     align-items: center;
     justify-content: center;
 }
@@ -51,8 +67,7 @@ p.name {
     margin-top: 0;
     margin-bottom: 10px;
     font-weight: bold;
-
-
+    color:black;
 }
 
 p.title {
@@ -60,8 +75,8 @@ p.title {
     display: block;
     margin: 0px;
     font-size: 16px;
-    color: #aaa;
-    font-weight: 300;
+    color: black;
+    font-weight: 500;
     margin-bottom: 15px;
     margin-top: 0;
 }
@@ -71,12 +86,13 @@ p.description {
     width: 100%;
     display: block;
     margin: 0px;
+    color: black;
 }
 
 .divider {
     height: 2px;
     width: 200px;
-    background-image: linear-gradient(to right, #add8e6, #d8ecf3, #e9cece, #feb086);
+    background-image: linear-gradient(to right, #4cc0ff, #ffe54c);
     margin-bottom: 15px;
 
 }
@@ -98,25 +114,26 @@ p.description {
 
     .text {
         display: flex;
-        flex: 1;
-        align-items: flex-start;
+        flex: 4;
+        align-items: center;
         text-align: center;
     }
 
     .photo {
-        display: flex;
-        flex: 1;
-        align-items: flex-end;
-        justify-content: center;
-        height: 100%;
+        flex: 3;
         width: 100%;
     }
 
-    .image-container img {
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        border: 20px solid #333;
+
+    .image-container {
+        width: 225px;
+        height: 225px;
+        
+    }
+    
+    .photo img {
+        width: 225px;
+        height: 225px;
     }
 
     .center {
@@ -126,5 +143,103 @@ p.description {
         align-items: center;
     }
 
-
 }
+
+.home-button-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.button-resume-download {
+    /* background-color: #4cc0ff; */
+    background-color: #4cc0ff;
+    border: 0 solid #4cc0ff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    max-width: 200px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.button-resume-download:focus {
+    outline: 0;
+}
+
+.button-resume-download:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+
+.button-resume-download:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
+
+.arcade-button {
+    background-color: transparent;
+    border: 0 solid #4cc0ff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    max-width: 460px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 20px;
+}
+
+.arcade-button:focus {
+    outline: 0;
+}
+
+.arcade-button:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #4cc0ff;
+    border-radius: 15px;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+
+.arcade-button:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
+
+.arcade-link {
+    text-decoration: none;
+}
+

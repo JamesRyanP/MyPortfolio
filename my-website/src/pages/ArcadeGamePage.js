@@ -43,8 +43,9 @@ console.log(stats);
   const gameContainerStyle = getGameContainerStyle(gameEngine);
 
   return (
+    <div className="arcade-game-page">
     <div className="agp">
-
+      <div className="empty-container"></div>
       <div className={`${gameContainerStyle}`}>
         <Iframe
           src={iframeSrc}
@@ -62,6 +63,7 @@ console.log(stats);
  
         </div>
       </div>
+    </div>
     </div>
   );
 };

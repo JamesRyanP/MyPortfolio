@@ -42,7 +42,9 @@ const GameDetailPage = () => {
   };
 
   return (
+      <div className="game-detail">
 
+    
       <div className="gdp">
 
         <div className="images-container">
@@ -74,17 +76,17 @@ const GameDetailPage = () => {
 
         <div className="info-container">
           <div className="roles">
-            <h3>Roles</h3>
+            <h2>Roles</h2>
             <GameRolesComponent />
           </div>
           <div className="technology">
-            <h3>Technology</h3>
+            <h2>Technology</h2>
             <GameTechnologyComponent />
 
           </div>
         </div>
       </div>
-
+      </div>
   );
 };
 

@@ -8,14 +8,15 @@ import './Layout.css';
 const Layout = () => {
   return (
     <div className="layout">
-      <Navbar />
+
 
       <main>
+        <Navbar />
         <Outlet />
-    
+        <Footer />
       </main>
 
-      <Footer />
+
 
     </div>
   );
